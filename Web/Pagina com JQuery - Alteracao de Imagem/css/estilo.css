@@ -1,0 +1,18 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+.box{
+	
+	background-color: #600;
+	border: 2px solid #000;
+	position: relative;
+}
+#box2{
+			width: 204px;
+			height: 204px;
+			background-color: #666;
+			border: 2px solid #000; 
+			display: none;
+		}

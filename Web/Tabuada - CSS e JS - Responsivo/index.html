@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Metatag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Tabuada 1 ao 10</title>
+    
+  </head>
+  <body> 
+		
+	<!-- <input type="number" id="n1"></input> -->
+	<!-- <div id="resultado">	 -->
+	<!-- </div> -->
+	<!-- <button onclick="tabuada()">Destacar</button> -->
+	
+	
+	<section class="container-fluid bg-light">
+		<article class="row align-items-start">
+		<div class="col-md-1 text-center"></div>
+		
+	<script>
+		var c1=1;
+		var c2=1;
+		var tb;
+
+		do{
+			document.write('<div class="col-md-2 text-center">')
+			document.write("<br>Tabuada do " + c1 + "<br><br>")	
+			do{
+			tb=c1*c2;
+				
+			document.write(c2 + " x " + c1 + " = " + tb + "<br>");
+			c2++;
+			}while(c2<=10);
+			c2=1;
+			c1++;
+			document.write("</div>")
+		}while(c1<=5);
+		
+      </script>
+	  <div class="col-md-1 text-center"></div>
+	  
+		</article>
+		<article class="row align-items-start">
+		<div class="col-md-1 text-center"></div>
+		
+	<script>
+		var c1=6;
+		var c2=1;
+		var tb;
+
+		do{
+			document.write('<div class="col-md-2 text-center">')
+			document.write("<br>Tabuada do " + c1 + "<br><br>")	
+			do{
+			tb=c1*c2;
+				
+			document.write(c2 + " x " + c1 + " = " + tb + "<br>");
+			c2++;
+			}while(c2<=10);
+			c2=1;
+			c1++;
+			document.write("</div>")
+		}while(c1<=10);
+		
+      </script>
+	  <div class="col-md-1 text-center"></div>
+	  
+		</article>
+	</section>
+  
+	<!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <!-- <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+  </body>
+</html>

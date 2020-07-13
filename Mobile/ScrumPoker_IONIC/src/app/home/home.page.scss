@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.centro{
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+//azul1
+.c1 {
+    --ion-background-color: var(--ion-color-primary) ;   
+}
+
+//azul2
+.c2 {
+    --ion-background-color: var(--ion-color-secondary) ;   
+}
+
+//marrom
+.c3 {
+    --ion-background-color: var(--ion-color-tertiary) ;   
+}
+
+//vermelho/rosa
+.c4 {
+    --ion-background-color: var(--ion-color-warning) ;   
+}
+
+//vermelho
+.c5 {
+    --ion-background-color: var(--ion-color-danger) ;   
+}
+
+.c6{
+    --ion-background-color: var(--ion-color-medium) ;
+}
+
+.c7{
+    --ion-background-color: var(--ion-color-dark) ;
+}
+
+.m{
+  text-transform: uppercase;
+  color: var(--ion-color-tertiary);
+  font-weight: bolder; 
+  font-size: 22px
+}

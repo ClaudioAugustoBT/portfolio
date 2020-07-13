@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="logForm()" required>
+
+    <ion-item>
+      <ion-label position="stacked">SALÁRIO BRUTO - MENSAL (R$):</ion-label>
+      <ion-input type="number" [(ngModel)]="calc.salarioBruto" name="salarioBruto" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">CONTRIBUIÇÃO SINDICAL - MENSAL (%):</ion-label>
+      <ion-input type="number" [(ngModel)]="calc.sindical" name="sindical"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">PLANO DE SAUDE - MENSAL (R$):</ion-label>
+      <ion-input type="number" [(ngModel)]="calc.saude" name="saude"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" block expand="full">CALCULAR</ion-button>
+  </form>
+
+  <ion-item>
+    <ion-label position="stacked">DESCONTO INSS - MENSAL (R$):</ion-label>
+    <ion-input [(ngModel)]="calc.inss" name="inss" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">INSS - ALÍQUOTA MENSAL (%):</ion-label>
+    <ion-input [(ngModel)]="calc.ainss" name="ainss" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">IRRF - DESCONTO MENSAL (R$):</ion-label>
+    <ion-input [(ngModel)]="calc.irrf" name="irrf" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">IRRF - ALÍQUOTA EFETIVA MENSAL (%):</ion-label>
+    <ion-input [(ngModel)]="calc.amirrf" name="amirrf" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">IRRF - ALÍQUOTA EFETIVA ANUAL (%):</ion-label>
+    <ion-input [(ngModel)]="calc.aairrf" name="aairrf" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">FGTS - MENSAL (R$):</ion-label>
+    <ion-input [(ngModel)]="calc.fgts" name="fgts" readonly></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">SALÁRIO-FAMÍLIA - MENSAL (R$):</ion-label>
+    <ion-input [(ngModel)]="calc.familia" name="familia" readonly></ion-input>
+  </ion-item>
+
+    
+
+  <div id="saida" align="center" style="display: none" class="result"> 
+    <h4>A melhor opção é:</h4>
+    <h3 id="resultado"></h3>
+  </div>
+  <div id="erro" style="display: none" align="center" class="result2"></div>
+
+</ion-content>

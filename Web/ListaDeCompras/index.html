@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Metatag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Lista de Compras</title>
+  </head>
+  <body class="bg-light">
+	<header class="container d-print-none">
+		<div class="row justify-content-center">
+			<div class="col-md-12 text-center">
+				<h1>CRIE SUA LISTA DE COMPRAS</h1>
+			</div>
+		</div>
+	</header>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<section class="container  d-print-none">
+
+	<section>
+	
+		<article class="row justify-content-center">
+			<div class="col-md-3 text-center">
+				<h4>PRODUTO</h4>
+				
+				<input type="text" id="produto"></input>
+			</div>
+			<div class="col-md-3 text-center">
+				<h4>QUANTIDADE</h4>
+				<input type="number" id="qtd"></input>
+			</div>	
+			<div class="col-md-3 text-center">
+				<h4>UNIDADE</h4>
+				<select name="unidade" id="unidade">
+						<option value=""> </option>
+						<option value="und.">und.</option>
+						<option value="kg">kg</option>
+						<option value="g">g</option>
+						<option value="pct.">pct.</option>
+						<option value="cx.">cx.</option>
+					  					  
+				</select>
+			</div>	
+			<div class="col-md-3 text-center">
+				<br>
+				<button id="btn" onclick="clicar()">Adicionar</button>
+			</div>
+		</article>
+		
+	</section>
+	<br>
+	<br>
+	<br>
+	<section id="imprimir">
+		<article class="container" id="imprimir">
+			<div class="row justify-content-center">
+				<div class="col-md-12 text-center">
+					<h2>LISTA DE COMPRAS</h2>
+				</div>
+			</div>
+		</article>
+		<article class="row justify-content-center">
+			<div class="col-md-312 text-center ">
+				<table class="table table-bordered d-print-table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">PRODUTO</th>
+							<th scope="col">QTD.</th>
+							<th scope="col">UND.</th>
+							<!-- <th scope="col"></th> -->
+						</tr>
+					</thead>
+					<tbody id="lista">
+												
+					</tbody>
+				</table>
+				<br>
+				<button id="btn2" onclick="imprimir()">Clique para imprimir</button>
+	
+			</div>
+		</article>
+	</section>	
+	
+	
+
+    
+    <script src="js/lista.js" type="text/javascript"></script>
+    
+  </body>
+</html>

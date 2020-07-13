@@ -1,0 +1,59 @@
+<ion-header class="c7">
+  <ion-toolbar>
+    <ion-title align="center" class="m">SCRUM POKER</ion-title>
+    <br>
+    <div id="jogador" align="center" class="m2"></div>
+    <div align="center" class="m2">POR FAVOR, SELECIONE UMA CARTA</div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding align="center" class="c6"> 
+  <ion-grid align="center">
+    <ion-row align="center">
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(0)" style="display: block" id="btnCard1">0</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(1)" style="display: block" id="btnCard2">1</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(2)" style="display: block" id="btnCard3">2</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row align="center">
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(3)" style="display: block" id="btnCard1">3</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(5)" style="display: block" id="btnCard2">5</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(8)" style="display: block" id="btnCard3">8</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row align="center">
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(13)" style="display: block" id="btnCard1">13</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(20)" style="display: block" id="btnCard2">20</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(40)" style="display: block" id="btnCard3">40</ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row align="center">
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(99)" style="display: block" id="btnCard1">P</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(100)" style="display: block" id="btnCard2">100</ion-button>
+        </ion-col>
+        <ion-col align="center">
+          <ion-button class="card" (click)="presentAlertConfirm(98)" style="display: block" id="btnCard3"> ∞ </ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- <ion-button class="" (click)="teste" style="display: block" id="btnJogar">JOGAR</ion-button> -->
+</ion-content>

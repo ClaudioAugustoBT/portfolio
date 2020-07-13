@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary" align="center">
+    <ion-title >
+      -CALCULADORA-
+      <BR>
+      MELHOR OPÇÃO 
+      <BR>
+      DE COMBUSTIVEL
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="logForm()" required>
+      <ion-item>
+        <ion-label position="stacked">PREÇO - GASOLINA(R$)</ion-label>
+        <ion-input type="number" [(ngModel)]="preco.gasolina" name="gasolina" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="stacked">PREÇO - ETANOL(R$)</ion-label>
+          <ion-input type="number" [(ngModel)]="preco.etanol" name="etanol" required></ion-input>
+      </ion-item>
+      <ion-button type="submit" block expand="full">CALCULO SIMPLES</ion-button>
+  </form>
+  <div id="saida" align="center" style="display: none" class="result"> 
+    <h4>A melhor opção é:</h4>
+    <h3 id="resultado"></h3>
+  </div>
+  <div id="erro" style="display: none" align="center" class="result2"></div>
+
+  <hr>
+  <hr>
+
+  <form (ngSubmit)="logForm2()" required>
+    <ion-item>
+      <ion-label  position="stacked">PREÇO - GASOLINA(R$)</ion-label>
+      <ion-input type="number" [(ngModel)]="comp.pgasolina" name="pgasolina" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">PREÇO - ETANOL(R$)</ion-label>
+      <ion-input type="number" [(ngModel)]="comp.petanol" name="petanol" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label  position="stacked">AUTONOMIA C/ GASOLINA (Km/l)</ion-label>
+      <ion-input type="number" [(ngModel)]="comp.autoGas" name="autoGas" required></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="stacked">AUTONOMIA C/ ETANOL (Km/l)</ion-label>
+        <ion-input type="number" [(ngModel)]="comp.autoEtanol" name="autoEtanol" required></ion-input>
+    </ion-item>
+    <ion-button type="submit" block expand="full">CALCULO COMPLETO</ion-button>
+</form>
+<div id="saida2" align="center" style="display: none" class="result"> 
+    <h4>A melhor opção é:</h4>
+    <h3 id="resultado2"></h3>
+  </div>
+  <div id="erro2" style="display: none" align="center" class="result2"></div>
+</ion-content>

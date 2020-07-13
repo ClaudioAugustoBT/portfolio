@@ -1,0 +1,28 @@
+<ion-header class="c7" align="center">
+  <ion-toolbar>
+    <ion-title class="m">Seleção de Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="c6">
+  <form (ngSubmit)="logForm()" id="startForm" style="display: block" required>
+    <ion-item class="gradient1">
+      <ion-label position="stacked" class="m2">QUANTIDADE DE JOGADORES:</ion-label>
+      <ion-input type="number" [(ngModel)]="qt.players" name="players" class="m21" required></ion-input>
+    </ion-item>
+    <ion-button type="submit" block expand="full" class="c1 m3">OK</ion-button>
+  </form>
+ 
+    <form (ngSubmit)="jogar()" required>
+      <ion-list>
+        <ion-item *ngFor="let item of inputs" class="gradient1">
+            <ion-label fixed class="m2">{{item.title}}</ion-label>
+            <ion-input type="{{item.type}}" value="{{item.value}}" name="{{item.name}}" id = "{{item.id}}" class="m21" required></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-button type="submit" style="display: none" id="btnJogar" class="c1 m3">JOGAR</ion-button>
+    </form>
+
+
+
+</ion-content>
