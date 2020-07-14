@@ -184,7 +184,8 @@
                 
     
         <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzY2KAgA392i4TYG-RjWdpU9N2U0xlX08&callback=initMap">
+	//KEY Censurada
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
         </script>
         <script type="text/javascript" src="{{ asset('/js/jquery-3.3.1.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('/js/bootstrap.min.js') }}"></script>
